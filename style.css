@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     height: 65px;
-    z-index: 2;
+    z-index: 3;
     display: grid;
     place-items: center;
     background: rgba(13, 107, 165, 0.3);
@@ -29,7 +29,6 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    z-index: 3;
 }
 
 nav a:hover {
@@ -104,17 +103,18 @@ nav a:hover {
 
 .arrow-left, .arrow-right {
     position: absolute;
-    top: 400px;
+    top: 500px;
     left: 0;
     right: auto;
-    bottom: 0;
+    bottom: 100px;
     font-size: 25px;
-    line-height: 250px;
+    line-height: 60px;
     width: 40px;
     text-align: center;
     color: white;
     cursor: pointer;
     border: none;
+    border-radius: 50%;
     background: linear-gradient(to left, transparent 0%, black 200%);
     opacity: 0.5;
     transition: all 500ms ease-in-out;
