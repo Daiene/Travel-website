@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
 .header-container {
     position: absolute;
     width: 100%;
@@ -45,6 +47,7 @@
 }
 
 .description {
+    font-family: 'Roboto', sans-serif;
     color: white;
     text-align: left;
     width: 80%;
