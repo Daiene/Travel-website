@@ -14,24 +14,24 @@
     left: 55px;
 }
 
-nav {
+.search {
     position: absolute;
 	right: 0;
 }
 
-nav li {
+.search li {
     display: inline;
     margin: 0 70px 0 0;
 }
 
-nav a {
+.search a {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-nav a:hover {
+.search a:hover {
     text-decoration: underline;
     color: turquoise;
 }
@@ -81,6 +81,61 @@ nav a:hover {
     height: 100vh;
     opacity: 0.2;
     z-index: 1;
+}
+
+.icon-wrapper {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    padding: 320px;
+}
+
+.social-networks {
+    position: absolute;
+	left: 50px;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks a {
+    float: left;
+	margin-right: 20px;
+	transition: all .4s ease-out;
+}
+
+.social-networks a:hover {
+    cursor: pointer;
+	box-shadow: 4px 15px 16px 0px rgba(50, 50, 50, 0.45);
+	transform: translateY(-5px);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.icon#facebook {
+    background-color: #2372a3;
+}
+
+.icon#instagram {
+    background-color: #d62976;
+}
+
+.icon#twitter {
+    background-color: #0084b4;
+}
+
+.icon#youtube {
+    background-color:  #b00;
 }
 
 .carousel {
