@@ -1,34 +1,33 @@
-const constrols = document.querySelectorAll('.control');
+const controls = document.querySelectorAll(".control");
 let currentItem = 0;
-const items = document.querySelectorAll('.item');
+const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 
-constrols.forEach((control) => {
-        control.addEventListener("click", () => {
-        const isLeft = control.classList.contains("arrow-left");
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
 
-        if (isLeft) {
-            currentItem -= 1;
-        } else {
-            currentItem += 1;
-        }
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
 
-        if (currentItem >= maxItems) {
-            currentItem = 0;
-        }
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
 
-        if (currentItem < 0) {
-            currentItem = maxItems - 1;
-        }
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
 
-        //A partir daqui começou a dar erro nas dimensões da página
-        //items.forEach(item => item.classList.remove('current-item'));
+    items.forEach((item) => item.classList.remove("current-item"));
 
-        //items[currentItem].scrollIntoView({
-            //inline: "center",
-            //behavior: "smooth"
-        //});
-
-        //items[currentItem].classList.add('current-item')
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
     });
+
+    items[currentItem].classList.add("current-item");
+  });
 });
