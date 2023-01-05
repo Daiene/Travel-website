@@ -1,5 +1,50 @@
-.section {
+body {
     position: relative;
+}
+
+.header-container {
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    background: rgba(13, 107, 165, 0.3);
+}
+
+.logotipo {
+    position: absolute;
+    width: 110px;
+    left: 55px;
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    position: absolute;
+	right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 70px 0 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    z-index: 3;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: turquoise;
+}
+
+.section {
+    position: absolute;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -9,11 +54,11 @@
 .description {
     color: white;
     text-align: left;
-    width: 40%;
+    width: 80%;
     font-size: 20px;
-    padding: 30px;
-    margin: 15px;
-    z-index: 1;
+    padding: 90px 30px;
+    margin: 25px;
+    z-index: 2;
 }
 
 .description h3, h1 {
@@ -45,7 +90,7 @@
 
 .carousel {
     position: absolute;
-    padding: 300px 45px 0 45px;
+    padding: 400px 45px 0 45px;
     max-width: 940px;
     margin: 0 60px;
     z-index: 1;
@@ -63,7 +108,7 @@
 
 .arrow-left, .arrow-right {
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: 0;
     right: auto;
     bottom: 0;
@@ -71,11 +116,11 @@
     line-height: 350px;
     width: 40px;
     text-align: center;
-    color: turquoise;
+    color: white;
     cursor: pointer;
     border: none;
     background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.3;
+    opacity: 0.5;
     transition: all 500ms ease-in-out;
 }
 
