@@ -163,7 +163,25 @@
 }
 
 .together {
-     
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: all 600ms ease-in-out;
+    border: 5px solid lightblue;
+    box-shadow: 0 0 10px lightblue;
+}
+
+.item:hover {
+    cursor: pointer;
+    filter: brightness(100%) opacity(0.7);
+    border: 5px solid rgba(64,224,208, 1);
+    box-shadow: 0 0 10px rgba(64,224,208, 1);
 }
 
 .content {
@@ -181,7 +199,7 @@
     z-index: 5;
 }
 
-.content {
+.content:hover {
     opacity: 1;
 }
 
@@ -212,23 +230,6 @@
 
 .arrow-left:hover, .arrow-right:hover {
     opacity: 1;
-}
-
-.item {
-    width: 250px;
-    height: 250px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    transition: all 600ms ease-in-out;
-    border: 5px solid lightblue;
-    box-shadow: 0 0 10px lightblue;
-}
-
-.item:hover {
-    cursor: pointer;
-    filter: brightness(100%) opacity(0.7);
-    border: 5px solid rgba(64,224,208, 1);
-    box-shadow: 0 0 10px rgba(64,224,208, 1);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
