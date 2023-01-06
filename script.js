@@ -14,11 +14,11 @@ controls.forEach((control) => {
     }
 
     if (currentItem >= maxItems) {
-      currentItem = 0;
+      currentItem = 1;
     }
 
     if (currentItem < 0) {
-      currentItem = maxItems - 1;
+      currentItem = maxItems - 2;
     }
 
     items.forEach((item) => item.classList.remove("current-item"));
