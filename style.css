@@ -218,7 +218,6 @@
     font-size: 20px;
     top: 0;
     left: 0;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,10 +316,23 @@
 }
 
 .service-container {
+    display: flex;
     width: 80vw;
-    display: block;
-    margin: 0 auto;
-    border: 5px solid red;
+    height: 500px;
+    margin: 60px auto;
+}
+
+.destinations {
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 15px;
+}
+
+.text-destinations {
+    display: inline;
+    vertical-align: top;
+    margin-left: 20px;
 }
 
 .footer {
