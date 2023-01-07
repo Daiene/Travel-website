@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
 .header-container {
     position: absolute;
@@ -65,6 +66,13 @@
 
 .description h3, h1 {
     text-transform: uppercase;
+}
+
+#test {
+    font-family: 'Cedarville Cursive', cursive;
+    text-transform: initial;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .italic {
