@@ -302,29 +302,24 @@
 }
 
 .service-background {
-    width: 100%;
-    height: 100vh;
     background: rgba(146, 201, 220);
 }
 
 .title-page {
     display: flex;
     width: 100%;
-    top: 200px;
     justify-content: center;
     text-transform: capitalize;
 }
 
 .service-position {
-    width: 100%;
-    top: 150px;
-    align-items: center;
-    border: 5px solid black;
+    margin: 50px 0;
 }
 
 .service-container {
-    display: flex;
-    width: 80%;
+    width: 80vw;
+    display: block;
+    margin: 0 auto;
     border: 5px solid red;
 }
 
