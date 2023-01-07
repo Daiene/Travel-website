@@ -20,6 +20,7 @@
 .search {
     position: absolute;
 	right: 0;
+    margin: 0 20px 0 0;
 }
 
 .search li {
@@ -48,14 +49,16 @@
 }
 
 .description {
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    left: 55px;
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: left;
-    width: 80%;
+    width: 900px;
     height: 200px;
     font-size: 20px;
-    padding: 65px 0 0 30px;
-    margin: 25px;
     z-index: 2;
 }
 
@@ -93,10 +96,11 @@
 
 .icon-wrapper {
     position: absolute;
+    display: flex;
+    top: 310px;
     width: 400px;
     float: left;
     z-index: 5;
-    padding: 290px 0 0 0;
 }
 
 .social-networks {
@@ -146,7 +150,9 @@
 
 .carousel {
     position: absolute;
-    padding: 340px 45px 0 45px;
+    display: flex;
+    top: 350px;
+    left: 45px;
     max-width: 820px;
     margin: 0 60px;
     z-index: 4;
@@ -163,14 +169,13 @@
 }
 
 .together {
-    width: 250px;
-    height: 250px;
-    flex-shrink: 0;
+    
 }
 
 .item {
     width: 250px;
     height: 250px;
+    flex-shrink: 0;
     border-radius: 50%;
     transition: all 600ms ease-in-out;
     border: 5px solid lightblue;
@@ -205,8 +210,9 @@
 
 .arrow-left, .arrow-right {
     position: absolute;
-    top: 440px;
-    left: 0;
+    display: flex;
+    top: 100px;
+    left: -50px;
     right: auto;
     bottom: 100px;
     font-size: 25px;
@@ -224,7 +230,7 @@
 
 .arrow-right {
     left: auto;
-    right: 0;
+    right: -50px;
     background: linear-gradient(to right, transparent 0%, black 200%);
 }
 
