@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <title>Contact - Travel World</title>
+</head>
+<body class="service-background">
+    <header class="right-header">
+        <img src="images/Logotipo/logo.png" alt="logotipo" class="logotipo">
+        <div class="search">
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="service.html" target="_blank">Service</a></li>
+                <li><a href="contact.html" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="form">
+        <form>
+            <label for="nameandsurname">Name and Surname</label>
+            <input type="text" id="nameandsurname" class="input" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input" required placeholder="email@hotmail.com">
+
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" class="input" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="message">Message</label>
+            <textarea cols="70" rows="10" id="message" class="input" required></textarea>
+
+            <fieldset class="radio-contact">
+                <legend>How would you prefer for our team to contact you?</legend>
+                <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email"> Email</label>
+                
+                <label for="radio-telephone"><input type="radio" name="contact" value="telephone" id="radio-telephone"> Telephone</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend >What is your preferred time?</legend>
+                <select>
+                    <option>Morning</option>
+                    <option>Evening</option>
+                    <option>Night</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Would you like to receive our promotions by email?</label>
+
+            <input type="submit" value="Submit Form" class="send">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            <img src="images/Logotipo/footer-logo.png" alt="logotipo">
+            <p class="copyright">&copy; Copyright Travel World - 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
