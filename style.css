@@ -330,6 +330,13 @@
     border-radius: 15px;
 }
 
+.destinations:hover {
+    opacity: 0.8;
+    width: 550px;
+    height: 550px;
+    border-radius: 40px;
+}
+
 .text-destinations {
     display: inline;
     vertical-align: top;
