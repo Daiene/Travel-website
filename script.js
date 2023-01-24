@@ -19,8 +19,8 @@ const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 
 controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
+  control.addEventListener("click", () => {
+    const isLeft = control.classList.contains("arrow-left");
 
     if (isLeft) {
       currentItem -= 1;
@@ -29,11 +29,11 @@ controls.forEach((control) => {
     }
 
     if (currentItem >= maxItems) {
-      currentItem = 1;
+      currentItem = 0;
     }
 
     if (currentItem < 0) {
-      currentItem = maxItems -1;
+      currentItem = 1;
     }
 
     items.forEach((item) => item.classList.remove("current-item"));
